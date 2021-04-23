@@ -16,16 +16,45 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-const person = 
+
+
+
+// const person = 
+// {
+//   name : 'Mosh',
+//   talk() {},
+//   walk() {
+//     console.log(this);
+//   }
+// }
+
+// person.walk();
+
+//const walk = person.walk.bind(person);
+//walk();
+
+
+const person1 =
 {
-  name : 'Mosh',
-  talk() {},
-  walk() {
-    console.log(this);
+  name : "mosh",
+  jump() {
+    setTimeout(function() {
+      console.log("this",this);
+    },1000);
   }
 }
 
-person.walk();
+person1.jump(); //returns window object as output.
 
-const walk = person.walk.bind(person);
-walk();
+
+const person =
+{
+  name : "mosh",
+  jump() {
+    setTimeout(() => {
+      console.log("this",this);
+    },1000);
+  }
+}
+
+person.jump(); //arrow function helps in getting inheritence of the person object's method jump.
