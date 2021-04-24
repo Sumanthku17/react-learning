@@ -34,27 +34,32 @@
 //walk();
 
 
-const person1 =
-{
-  name : "mosh",
-  jump() {
-    setTimeout(function() {
-      console.log("this",this);
-    },1000);
-  }
-}
+// const person1 =
+// {
+//   name : "mosh",
+//   jump() {
+//     setTimeout(function() {
+//       console.log("this",this);
+//     },1000);
+//   }
+// }
 
-person1.jump(); //returns window object as output.
+// person1.jump(); //returns window object as output.
 
 
-const person =
-{
-  name : "mosh",
-  jump() {
-    setTimeout(() => {
-      console.log("this",this);
-    },1000);
-  }
-}
+// const person =
+// {
+//   name : "mosh",
+//   jump() {
+//     setTimeout(() => {
+//       console.log("this",this);
+//     },1000);
+//   }
+// }
 
-person.jump(); //arrow function helps in getting inheritence of the person object's method jump.
+// person.jump(); //arrow function helps in getting inheritence of the person object's method jump.
+
+
+const colors =['red','green','yellow'];
+const vari = colors.map(color => `<li>${color}</li>`);
+console.log(vari);
