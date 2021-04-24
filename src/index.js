@@ -60,6 +60,21 @@
 // person.jump(); //arrow function helps in getting inheritence of the person object's method jump.
 
 
-const colors =['red','green','yellow'];
-const vari = colors.map(color => `<li>${color}</li>`);
-console.log(vari);
+// const colors =['red','green','yellow'];
+// const vari = colors.map(color => `<li>${color}</li>`);
+// console.log(vari); // arr.map funtion
+
+
+const sumanth =
+{
+  name:"nanu",
+  age:"",
+  class:""
+}
+
+//  const nm = sumanth.name;
+// const ag = sumanth.age;
+// const cl = sumanth.class;
+
+const {name : nm, age : ag, class : cl}= sumanth; // this object destructuring i.e. instead of above 3 lines u can use this single line
+console.log(nm);
